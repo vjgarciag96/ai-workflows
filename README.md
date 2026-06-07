@@ -39,6 +39,7 @@ They will be available as slash commands in any project (e.g. `/discovery`).
 | [discovery](workflows/product/discovery.md) | Take a raw idea and produce a signed-off PRD |
 | [competitor-analysis](workflows/product/competitor-analysis.md) | Map the solution landscape and surface positioning gaps |
 | [prd-review](workflows/product/prd-review.md) | Run a structured multi-perspective review of a PRD using the full team |
+| [design](workflows/product/design.md) | Take a signed-off PRD and produce an interactive HTML prototype covering all screens and states |
 | [commit](workflows/git/commit.md) | Generate a commit message consistent with the repo's style |
 
 ---
