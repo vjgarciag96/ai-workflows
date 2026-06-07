@@ -1,22 +1,41 @@
-# Command: discovery
+# Workflow: Discovery
 
-Run a product discovery session that takes a raw idea and produces a signed-off PRD committed to a new project repository.
+## Purpose
 
-**MANDATORY** Keep the PRD tech-agnostic. Implementation details (frameworks, APIs, protocols) belong in a tech spec, not here.
-**MANDATORY** Do not write the PRD until open questions are resolved and the user has confirmed the framing.
-**MANDATORY** Do not create the project or commit anything until the user explicitly approves the final PRD.
+Take a raw idea and produce a signed-off PRD committed to a new project repository.
+
+## Input
+
+A raw idea — unpolished is fine.
+
+## Output
+
+A `PRD.md` committed to a new project repository.
 
 ---
 
-## Step 1 — Get the Raw Idea
+## Principles
+
+- The PRD is tech-agnostic. Implementation details (frameworks, APIs, protocols) belong in a tech spec, not here.
+- Do not write the PRD until open questions are resolved and the user has confirmed the framing.
+- Do not create the project or commit anything until the user explicitly approves the final PRD.
+- Name the user roles explicitly. If the product has two sides, define both from the start.
+- Pressure-test the mechanism, not just the idea. Ask why it works this way.
+- Ask focused questions in batches — not one at a time forever.
+
+---
+
+## Steps
+
+### 1 — Get the Raw Idea
 
 Ask the user to share their idea. Unpolished is fine — do not ask for a structured brief.
 
 ---
 
-## Step 2 — Pressure-Test the Idea
+### 2 — Pressure-Test the Idea
 
-Ask focused questions to stress the idea. Do not interrogate one thing at a time — group related questions and ask them together. Cover:
+Ask focused questions to stress the idea. Group related questions and ask them together. Cover:
 
 **Users**
 - Who specifically are the users? Push for concrete scenarios, not demographics.
@@ -38,9 +57,9 @@ Listen to the answers. Adjust follow-up questions based on what's still unclear.
 
 ---
 
-## Step 3 — Synthesize and Confirm Framing
+### 3 — Synthesize and Confirm Framing
 
-Before drafting anything, reflect back what you've understood:
+Before drafting anything, reflect back:
 - The core problem in one sentence
 - Who the users are and what each of them does
 - What the product is, stated plainly
@@ -49,7 +68,7 @@ Ask the user if this framing is right. Only proceed when confirmed.
 
 ---
 
-## Step 4 — Draft the PRD
+### 4 — Draft the PRD
 
 Write a tech-agnostic PRD using this structure:
 
@@ -63,7 +82,8 @@ One short paragraph: what the product is and how it works at the highest level.
 What's broken today. Be specific — reference the actual behaviour people resort to.
 
 ## Users
-Named roles (e.g. Owner / Controller, Sender / Recipient). One short paragraph per role describing who they are and what they do in the product.
+Named roles (e.g. Owner / Controller, Sender / Recipient). One short paragraph per role
+describing who they are and what they do in the product.
 
 ## Goals
 Bulleted list of what a successful MVP achieves.
@@ -73,7 +93,7 @@ Bulleted list of things explicitly out of scope. Include deferred features with 
 
 ## Core User Stories
 Grouped by role. Each story starts with "I can..." or "I get...".
-Include cross-role stories (things that apply to both) in a "Both" section.
+Include cross-role stories in a "Both" section.
 
 ## Key Product Decisions
 Markdown table: Decision | Choice | Rationale
@@ -87,7 +107,7 @@ Numbered list of unresolved decisions that need answers before the PRD is final.
 
 ---
 
-## Step 5 — Resolve Open Questions
+### 5 — Resolve Open Questions
 
 Present the open questions to the user and work through each one. Update the PRD as decisions are made. Remove resolved questions from the Open Questions section — decisions belong in Key Product Decisions or MVP Scope.
 
@@ -95,7 +115,7 @@ Do not finalize the PRD until all open questions are resolved.
 
 ---
 
-## Step 6 — Final Approval and Commit
+### 6 — Final Approval and Commit
 
 Present the final PRD to the user. Ask for explicit approval.
 
