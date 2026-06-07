@@ -36,5 +36,5 @@ They will be available as slash commands in any project (e.g. `/discovery`).
 
 | Workflow | Description |
 |---|---|
-| [discovery](workflows/discovery.md) | Take a raw idea and produce a signed-off PRD |
+| [discovery](workflows/product/discovery.md) | Take a raw idea and produce a signed-off PRD |
 | [commit](workflows/git/commit.md) | Generate a commit message consistent with the repo's style |
