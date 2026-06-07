@@ -5,6 +5,7 @@ Take a raw idea and produce a signed-off PRD committed to a new project reposito
 **MANDATORY** The PRD is tech-agnostic. Implementation details (frameworks, APIs, protocols) belong in a tech spec, not here.
 **MANDATORY** Do not write the PRD until open questions are resolved and the user has confirmed the framing.
 **MANDATORY** Do not create the project or commit anything until the user explicitly approves the final PRD.
+**MANDATORY** Competitive discovery is not optional — run it before confirming framing.
 
 ---
 
@@ -13,6 +14,7 @@ Take a raw idea and produce a signed-off PRD committed to a new project reposito
 - Name the user roles explicitly. If the product has two sides, define both from the start.
 - Pressure-test the mechanism, not just the idea. Ask why it works this way.
 - Ask focused questions in batches — not one at a time forever.
+- Competitive findings should directly shape goals, non-goals, and key product decisions in the PRD.
 
 ---
 
@@ -46,18 +48,46 @@ Listen to the answers. Adjust follow-up questions based on what's still unclear.
 
 ---
 
-## Step 3 — Synthesize and Confirm Framing
+## Step 3 — Competitive Discovery
 
-Before drafting anything, reflect back:
+Research what already exists in this space before confirming framing. Cover:
+
+**Existing solutions**
+- What products already solve this problem, fully or partially?
+- What do they cost? What's free, what's paid, what's paywalled?
+- Which require accounts, setup, or technical knowledge?
+
+**Direct vs. indirect competition**
+- What are people actually using today as a workaround, even if imperfect?
+- Which competitors are technically closest to the proposed product?
+
+**Gaps**
+- What does no existing solution do well?
+- What do users complain about most in reviews and forums?
+- Where is the market genuinely unoccupied?
+
+Summarise findings to the user. Let them react — they may adjust scope, positioning, or the core mechanism.
+
+Use competitive findings to sharpen the PRD:
+- Goals should reflect real gaps, not features that already exist everywhere
+- Non-Goals should park things incumbents already do well
+- Key Product Decisions should be informed by what competitors got wrong
+
+---
+
+## Step 4 — Synthesize and Confirm Framing
+
+After competitive discovery, reflect back:
 - The core problem in one sentence
 - Who the users are and what each of them does
 - What the product is, stated plainly
+- How it is meaningfully different from what already exists
 
 Ask the user if this framing is right. Only proceed when confirmed.
 
 ---
 
-## Step 4 — Draft the PRD
+## Step 5 — Draft the PRD
 
 Write a tech-agnostic PRD using this structure:
 
@@ -96,7 +126,7 @@ Numbered list of unresolved decisions that need answers before the PRD is final.
 
 ---
 
-## Step 5 — Resolve Open Questions
+## Step 6 — Resolve Open Questions
 
 Present the open questions to the user and work through each one. Update the PRD as decisions are made. Remove resolved questions from the Open Questions section — decisions belong in Key Product Decisions or MVP Scope.
 
@@ -104,7 +134,7 @@ Do not finalize the PRD until all open questions are resolved.
 
 ---
 
-## Step 6 — Final Approval and Commit
+## Step 7 — Final Approval and Commit
 
 Present the final PRD to the user. Ask for explicit approval.
 
