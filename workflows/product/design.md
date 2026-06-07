@@ -6,12 +6,12 @@ Take a signed-off PRD and produce an interactive HTML prototype covering every s
 
 ## Input
 
-A `PRD.md` file.
+A `spec/product/PRD.md` file.
 
 ## Output
 
-- `design/prototype.html` — a self-contained, interactive HTML/CSS/JS prototype. Mobile viewport, phone frame, dev nav for jumping to any screen/state. No external dependencies.
-- The PRD, updated with every product decision surfaced during the design phase.
+- `spec/design/prototype.html` — a self-contained, interactive HTML/CSS/JS prototype. Mobile viewport, phone frame, dev nav for jumping to any screen/state. No external dependencies.
+- `spec/product/PRD.md`, updated with every product decision surfaced during the design phase.
 
 ---
 

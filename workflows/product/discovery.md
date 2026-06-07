@@ -10,7 +10,7 @@ A raw idea — unpolished is fine.
 
 ## Output
 
-A `PRD.md` committed to a new project repository.
+A `spec/product/PRD.md` and `spec/product/COMPETITOR_ANALYSIS.md` committed to a new project repository.
 
 ---
 
@@ -60,23 +60,9 @@ Listen to the answers. Adjust follow-up questions based on what's still unclear.
 
 ### 3 — Competitive Discovery
 
-Before confirming framing, research what already exists in this space. Cover:
+Run the competitor-analysis workflow at this point. See `workflows/product/competitor-analysis.md` for the full steps.
 
-**Existing solutions**
-- What products already solve this problem, fully or partially?
-- What do they cost? What's free, what's paid, what's behind a paywall?
-- Which ones require accounts, setup, or technical knowledge?
-
-**Direct vs. indirect competition**
-- What are people actually using today as a workaround, even if it's imperfect?
-- Which competitors are technically closest to the proposed product?
-
-**Gaps**
-- What does no existing solution do well?
-- What do users complain about most in reviews and forums?
-- Where is the market map genuinely unoccupied?
-
-Summarise findings back to the user. Let them react — they may adjust scope, positioning, or the core mechanism based on what already exists.
+The output is `spec/product/COMPETITOR_ANALYSIS.md`, committed before proceeding. Do not skip this step.
 
 Use competitive findings to sharpen the PRD:
 - Goals should reflect real gaps, not features that already exist everywhere
@@ -150,6 +136,6 @@ Present the final PRD to the user. Ask for explicit approval.
 
 Once approved:
 1. Ask where the project directory should live if not already known.
-2. Create the project directory.
-3. Write the PRD as `PRD.md` in the project root.
+2. Create the project directory with the folder structure: `spec/product/`, `spec/design/`, `spec/engineering/`.
+3. Write the PRD as `spec/product/PRD.md`.
 4. Run `git init` and commit with message `Add PRD`.

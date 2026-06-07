@@ -69,7 +69,7 @@ Produce a summary table comparing the most relevant competitors on the dimension
 
 Present the full analysis to the user. Ask for confirmation before writing to disk.
 
-Once confirmed, write `COMPETITOR_ANALYSIS.md` to the project root using this structure:
+Once confirmed, write `spec/product/COMPETITOR_ANALYSIS.md` using this structure:
 
 ```
 # Competitor Analysis — [Product Name]

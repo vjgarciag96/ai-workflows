@@ -61,7 +61,7 @@ Write every decision into the PRD immediately — user stories, key product deci
 
 ## Step 5 — Build the Prototype
 
-Save to `design/prototype.html`.
+Save to `spec/design/prototype.html`.
 
 **Requirements:**
 - Single HTML file, no external dependencies

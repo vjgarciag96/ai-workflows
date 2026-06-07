@@ -10,7 +10,7 @@ A product idea, problem description, or PRD.
 
 ## Output
 
-A `COMPETITOR_ANALYSIS.md` committed to the project repository.
+A `spec/product/COMPETITOR_ANALYSIS.md` committed to the project repository.
 
 ---
 
@@ -83,7 +83,7 @@ Produce a summary table comparing the most relevant competitors on the dimension
 
 ### 6 — Output and Commit
 
-Write a `COMPETITOR_ANALYSIS.md` in the project root using this structure:
+Write `spec/product/COMPETITOR_ANALYSIS.md` using this structure:
 
 ```
 # Competitor Analysis — [Product Name]

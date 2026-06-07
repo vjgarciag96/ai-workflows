@@ -6,11 +6,11 @@ Run a structured multi-perspective review of a PRD using the full team defined i
 
 ## Input
 
-A `PRD.md` file.
+A `spec/product/PRD.md` file.
 
 ## Output
 
-An updated, improved `PRD.md` with decisions documented and critical gaps closed.
+An updated, improved `spec/product/PRD.md` with decisions documented and critical gaps closed.
 
 ---
 
