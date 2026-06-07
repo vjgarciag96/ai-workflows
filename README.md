@@ -37,4 +37,5 @@ They will be available as slash commands in any project (e.g. `/discovery`).
 | Workflow | Description |
 |---|---|
 | [discovery](workflows/product/discovery.md) | Take a raw idea and produce a signed-off PRD |
+| [competitor-analysis](workflows/product/competitor-analysis.md) | Map the solution landscape and surface positioning gaps |
 | [commit](workflows/git/commit.md) | Generate a commit message consistent with the repo's style |
