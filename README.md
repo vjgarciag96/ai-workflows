@@ -38,4 +38,33 @@ They will be available as slash commands in any project (e.g. `/discovery`).
 |---|---|
 | [discovery](workflows/product/discovery.md) | Take a raw idea and produce a signed-off PRD |
 | [competitor-analysis](workflows/product/competitor-analysis.md) | Map the solution landscape and surface positioning gaps |
+| [prd-review](workflows/product/prd-review.md) | Run a structured multi-perspective review of a PRD using the full team |
 | [commit](workflows/git/commit.md) | Generate a commit message consistent with the repo's style |
+
+---
+
+## Team
+
+The review team is defined in [`workflows/team/`](workflows/team/). Each team member has their own file with their role, focus areas, and voice. They are used by the `prd-review` workflow and any other workflow that benefits from multi-perspective input.
+
+| Character | Role |
+|---|---|
+| Dumbledore | Principal Engineer |
+| Hermione | Senior Backend Engineer |
+| Ron | Senior Web Engineer |
+| Sirius | Senior iOS Engineer |
+| Luna | Creative PM |
+| Percy | Conservative PM |
+| McGonagall | Principal Designer |
+| Snape | Data Scientist |
+| Moody | Security Engineer |
+| Neville | QA / Testing |
+| Arthur | DevOps / SRE |
+| Tonks | UX Researcher |
+| Fred | Growth / Marketing |
+| Harry | Junior Android Engineer |
+| Ginny | Junior Backend Engineer |
+| Colin | Junior PM / Product Analyst |
+| Dean | Junior Designer |
+| Voldemort | Adversarial Reviewer |
+| Victor | Senior Android Engineer (product owner) |
