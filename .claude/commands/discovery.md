@@ -1,0 +1,106 @@
+# Command: discovery
+
+Run a product discovery session that takes a raw idea and produces a signed-off PRD committed to a new project repository.
+
+**MANDATORY** Keep the PRD tech-agnostic. Implementation details (frameworks, APIs, protocols) belong in a tech spec, not here.
+**MANDATORY** Do not write the PRD until open questions are resolved and the user has confirmed the framing.
+**MANDATORY** Do not create the project or commit anything until the user explicitly approves the final PRD.
+
+---
+
+## Step 1 — Get the Raw Idea
+
+Ask the user to share their idea. Unpolished is fine — do not ask for a structured brief.
+
+---
+
+## Step 2 — Pressure-Test the Idea
+
+Ask focused questions to stress the idea. Do not interrogate one thing at a time — group related questions and ask them together. Cover:
+
+**Users**
+- Who specifically are the users? Push for concrete scenarios, not demographics.
+- Are there two sides (owner/recipient, sender/viewer, etc.)? Name them explicitly.
+
+**The problem**
+- What do people do today instead? What's painful about it?
+- Is this a real recurring pain or a hypothetical one?
+
+**The mechanism**
+- Why does the product work this way? What does the specific interaction model unlock?
+- What's the simplest version of this that would still solve the problem?
+
+**Scope**
+- Which parts are core and which are nice-to-have?
+- What should be explicitly out of scope for the first version?
+
+Listen to the answers. Adjust follow-up questions based on what's still unclear. Do not ask about things the user has already answered.
+
+---
+
+## Step 3 — Synthesize and Confirm Framing
+
+Before drafting anything, reflect back what you've understood:
+- The core problem in one sentence
+- Who the users are and what each of them does
+- What the product is, stated plainly
+
+Ask the user if this framing is right. Only proceed when confirmed.
+
+---
+
+## Step 4 — Draft the PRD
+
+Write a tech-agnostic PRD using this structure:
+
+```
+# [Product Name] — Product Requirements Document
+
+## Overview
+One short paragraph: what the product is and how it works at the highest level.
+
+## Problem
+What's broken today. Be specific — reference the actual behaviour people resort to.
+
+## Users
+Named roles (e.g. Owner / Controller, Sender / Recipient). One short paragraph per role describing who they are and what they do in the product.
+
+## Goals
+Bulleted list of what a successful MVP achieves.
+
+## Non-Goals (MVP)
+Bulleted list of things explicitly out of scope. Include deferred features with a "— deferred" label.
+
+## Core User Stories
+Grouped by role. Each story starts with "I can..." or "I get...".
+Include cross-role stories (things that apply to both) in a "Both" section.
+
+## Key Product Decisions
+Markdown table: Decision | Choice | Rationale
+
+## MVP Scope
+Bulleted list of what ships in v1.
+
+## Open Questions
+Numbered list of unresolved decisions that need answers before the PRD is final.
+```
+
+---
+
+## Step 5 — Resolve Open Questions
+
+Present the open questions to the user and work through each one. Update the PRD as decisions are made. Remove resolved questions from the Open Questions section — decisions belong in Key Product Decisions or MVP Scope.
+
+Do not finalize the PRD until all open questions are resolved.
+
+---
+
+## Step 6 — Final Approval and Commit
+
+Present the final PRD to the user. Ask for explicit approval.
+
+Once approved:
+1. Ask where the project directory should live if not already known.
+2. Create the project directory.
+3. Write the PRD as `PRD.md` in the project root.
+4. Run `git init` and commit with message `Add PRD`.
