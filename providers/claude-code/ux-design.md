@@ -1,4 +1,4 @@
-# Command: design
+# Command: ux-design
 
 Take a signed-off PRD and produce an interactive HTML prototype covering every screen, every state, and every critical interaction — before any implementation code is written.
 

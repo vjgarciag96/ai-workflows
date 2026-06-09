@@ -1,4 +1,4 @@
-# Workflow: Design
+# Workflow: UX Design
 
 ## Purpose
 

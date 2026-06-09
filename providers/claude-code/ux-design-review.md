@@ -1,4 +1,4 @@
-# Command: design-review
+# Command: ux-design-review
 
 Run a structured multi-perspective review of a completed design document. Surface missing states, spec gaps, developer ambiguities, and open questions. Drive the document to a state where implementation can begin without guessing.
 
