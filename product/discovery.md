@@ -60,7 +60,7 @@ Listen to the answers. Adjust follow-up questions based on what's still unclear.
 
 ### 3 — Competitive Discovery
 
-Run the competitor-analysis workflow at this point. See `workflows/product/competitor-analysis.md` for the full steps.
+Run the competitor-analysis workflow at this point. See `product/competitor-analysis.md` for the full steps.
 
 The output is `spec/product/COMPETITOR_ANALYSIS.md`, committed before proceeding. Do not skip this step.
 

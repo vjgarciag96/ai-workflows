@@ -12,7 +12,7 @@ Run a structured multi-perspective review of a PRD using the full team roster. S
 
 ## The Team
 
-Defined in full in `workflows/team/` (one file per team member). Summary:
+Defined in full in `team/` (one file per team member). Summary:
 
 | Character | Role |
 |---|---|

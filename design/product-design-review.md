@@ -36,7 +36,7 @@ Read `spec/design/DESIGN.md` and `spec/product/PRD.md` in full before launching 
 
 ### 2 — Run All Reviewers in Parallel
 
-Launch one agent per team member simultaneously. Each agent receives DESIGN.md, PRD.md, and their character, role, and focus areas from `workflows/team/`.
+Launch one agent per team member simultaneously. Each agent receives DESIGN.md, PRD.md, and their character, role, and focus areas from `team/`.
 
 **Do not let reviewers see each other's output at this stage.**
 

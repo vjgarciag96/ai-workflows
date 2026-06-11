@@ -12,7 +12,7 @@ Run a structured multi-perspective review of a completed design document. Surfac
 
 ## The Team
 
-Defined in full in `workflows/team/` (one file per team member). Summary:
+Defined in full in `team/` (one file per team member). Summary:
 
 | Character | Role |
 |---|---|

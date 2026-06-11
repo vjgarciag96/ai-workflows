@@ -30,7 +30,7 @@ Read the PRD in full. Understand the state machine, user stories, and known risk
 
 ## Step 2 — Run All Designers in Parallel
 
-Launch McGonagall, Dean, and Tonks simultaneously. Each receives the full PRD plus their character definition from `workflows/team/`. They must not see each other's output at this stage.
+Launch McGonagall, Dean, and Tonks simultaneously. Each receives the full PRD plus their character definition from `team/`. They must not see each other's output at this stage.
 
 **McGonagall** — produce a complete screen inventory: every screen, every state, every trust and error moment. Named and described specifically.
 

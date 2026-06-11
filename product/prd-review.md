@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Run a structured multi-perspective review of a PRD using the full team defined in `workflows/team/`. Surface critical issues, debates, and open questions. Drive the PRD to a state where implementation can begin.
+Run a structured multi-perspective review of a PRD using the full team defined in `team/`. Surface critical issues, debates, and open questions. Drive the PRD to a state where implementation can begin.
 
 ## Input
 

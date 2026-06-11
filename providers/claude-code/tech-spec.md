@@ -31,7 +31,7 @@ Read PRD.md and DESIGN.md in full before launching reviewers.
 
 ### Step 2 — Run Pre-Spec Reviewers in Parallel
 
-Six engineering-focused reviewers. Each receives the PRD, DESIGN.md, and their character from `workflows/team/`. Goal: surface the decisions that must be made before the spec is written, not a full review.
+Six engineering-focused reviewers. Each receives the PRD, DESIGN.md, and their character from `team/`. Goal: surface the decisions that must be made before the spec is written, not a full review.
 
 | Character | Role | Pre-spec focus |
 |---|---|---|
@@ -85,7 +85,7 @@ Every threshold, timeout, and value that matters must be in the spec. If an engi
 
 ### Step 6 — Run All Reviewers in Parallel
 
-Full team. Each receives TECH_SPEC.md, PRD.md, and DESIGN.md, plus their character from `workflows/team/`.
+Full team. Each receives TECH_SPEC.md, PRD.md, and DESIGN.md, plus their character from `team/`.
 
 **Do not let reviewers see each other's output.**
 

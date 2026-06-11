@@ -41,7 +41,7 @@ Read PRD.md and DESIGN.md in full. Understand the session state machine, user st
 
 ### 2 — Pre-Spec Engineering Review
 
-Launch one agent per engineer simultaneously. Each agent receives the PRD, the design document, and their character, role, and focus from `workflows/team/`.
+Launch one agent per engineer simultaneously. Each agent receives the PRD, the design document, and their character, role, and focus from `team/`.
 
 **Do not let reviewers see each other's output at this stage.**
 

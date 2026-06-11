@@ -9,12 +9,16 @@ Workflows are extracted from real project work, not designed in the abstract. Th
 ## Structure
 
 ```
-workflows/          # Canonical workflow definitions (provider-agnostic)
+product/            # Product workflows (discovery, PRD review)
+design/             # Design workflows (prototype, design review)
+engineering/        # Engineering workflows (tech spec)
+git/                # Git workflows (commit)
+team/               # Team member definitions used by review workflows
 providers/
   claude-code/      # Adapters for Claude Code slash commands
 ```
 
-Each workflow lives in `workflows/` as the single source of truth. Provider-specific adapters in `providers/` are self-contained copies formatted for that provider's conventions. When a canonical workflow changes, its adapters should be updated to match.
+Canonical workflows live at the top level. Provider-specific adapters in `providers/` are self-contained copies formatted for that provider's conventions. When a canonical workflow changes, its adapters should be updated to match.
 
 ---
 
@@ -36,19 +40,19 @@ They will be available as slash commands in any project (e.g. `/discovery`).
 
 | Workflow | Description |
 |---|---|
-| [discovery](workflows/product/discovery.md) | Take a raw idea and produce a signed-off PRD |
-| [competitor-analysis](workflows/product/competitor-analysis.md) | Map the solution landscape and surface positioning gaps |
-| [prd-review](workflows/product/prd-review.md) | Run a structured multi-perspective review of a PRD using the full team |
-| [product-design](workflows/design/product-design.md) | Take a signed-off PRD and produce an interactive HTML prototype covering all screens and states |
-| [product-design-review](workflows/design/product-design-review.md) | Run a structured multi-perspective review of a product design document; surface missing states, spec gaps, and developer ambiguities |
-| [tech-spec](workflows/engineering/tech-spec.md) | Take a signed-off PRD and design doc and produce a complete technical specification; two-phase: pre-spec engineering review then full-team post-spec review |
-| [commit](workflows/git/commit.md) | Generate a commit message consistent with the repo's style |
+| [discovery](product/discovery.md) | Take a raw idea and produce a signed-off PRD |
+| [competitor-analysis](product/competitor-analysis.md) | Map the solution landscape and surface positioning gaps |
+| [prd-review](product/prd-review.md) | Run a structured multi-perspective review of a PRD using the full team |
+| [product-design](design/product-design.md) | Take a signed-off PRD and produce an interactive HTML prototype covering all screens and states |
+| [product-design-review](design/product-design-review.md) | Run a structured multi-perspective review of a product design document; surface missing states, spec gaps, and developer ambiguities |
+| [tech-spec](engineering/tech-spec.md) | Take a signed-off PRD and design doc and produce a complete technical specification; two-phase: pre-spec engineering review then full-team post-spec review |
+| [commit](git/commit.md) | Generate a commit message consistent with the repo's style |
 
 ---
 
 ## Team
 
-The review team is defined in [`workflows/team/`](workflows/team/). Each team member has their own file with their role, focus areas, and voice. They are used by the `prd-review` workflow and any other workflow that benefits from multi-perspective input.
+The review team is defined in [`team/`](team/). Each team member has their own file with their role, focus areas, and voice. They are used by the `prd-review` workflow and any other workflow that benefits from multi-perspective input.
 
 | Character | Role |
 |---|---|
