@@ -41,6 +41,7 @@ They will be available as slash commands in any project (e.g. `/discovery`).
 | [prd-review](workflows/product/prd-review.md) | Run a structured multi-perspective review of a PRD using the full team |
 | [product-design](workflows/design/product-design.md) | Take a signed-off PRD and produce an interactive HTML prototype covering all screens and states |
 | [product-design-review](workflows/design/product-design-review.md) | Run a structured multi-perspective review of a product design document; surface missing states, spec gaps, and developer ambiguities |
+| [tech-spec](workflows/engineering/tech-spec.md) | Take a signed-off PRD and design doc and produce a complete technical specification; two-phase: pre-spec engineering review then full-team post-spec review |
 | [commit](workflows/git/commit.md) | Generate a commit message consistent with the repo's style |
 
 ---
