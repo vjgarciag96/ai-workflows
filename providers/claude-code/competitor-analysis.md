@@ -1,3 +1,3 @@
 # Command: competitor-analysis
 
-@/Users/vicgarci/AndroidStudioProjects/ai-workflows/product/competitor-analysis.md
+@../../product/competitor-analysis.md

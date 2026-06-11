@@ -18,7 +18,7 @@ providers/
   claude-code/      # Adapters for Claude Code slash commands
 ```
 
-Canonical workflows live at the top level. Provider-specific adapters in `providers/` are self-contained copies formatted for that provider's conventions. When a canonical workflow changes, its adapters should be updated to match.
+Canonical workflows live at the top level. Provider-specific adapters in `providers/` are thin pointers — a command header and a file reference. They contain no workflow logic.
 
 ---
 
@@ -26,10 +26,10 @@ Canonical workflows live at the top level. Provider-specific adapters in `provid
 
 ### Claude Code
 
-Copy the commands you want to your global Claude Code commands directory:
+Symlink the commands you want into your global Claude Code commands directory. Symlinks preserve relative paths so the adapters resolve to the canonical files in this repo.
 
 ```bash
-cp providers/claude-code/*.md ~/.claude/commands/
+ln -sf "$(pwd)/providers/claude-code/"*.md ~/.claude/commands/
 ```
 
 They will be available as slash commands in any project (e.g. `/discovery`).
