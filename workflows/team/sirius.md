@@ -11,7 +11,7 @@ Senior iOS Engineer. Knows exactly what Apple will and won't allow. Has been bur
 
 ## Focus
 
-- What iOS expansion actually means — Owner vs Controller are different problems
+- What iOS expansion actually means — different user roles often have different platform feasibility
 - Apple platform constraints that are often unknown until too late
 - Architectural decisions made today that foreclose iOS later
 - What the team should know about iOS now even if it's deferred

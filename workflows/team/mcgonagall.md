@@ -12,7 +12,7 @@ Principal Designer. Exacting standards. Believes great design is invisible when 
 ## Focus
 
 - All states — not just the happy path
-- Trust moments — approval, active session, termination
+- High-stakes interactions — trust moments, critical decisions, and irreversible actions
 - What "clear message" means as an actual design spec
 - The experience of waiting, of uncertainty, of things going wrong
 - Whether the interaction model matches the mental model it's trying to create

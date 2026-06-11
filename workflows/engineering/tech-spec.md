@@ -56,10 +56,10 @@ The goal is not a full review — it is surfacing the decisions that must be mad
 
 - **Dumbledore** (Principal Engineer) — overall architecture; constraints that shape every other decision; what must be committed to now vs. deferred safely; choices that will be expensive to reverse
 - **Hermione** (Senior Backend Engineer) — backend architecture; data model; session state machine; client-server trust; API surface; what the client must not be trusted to send
-- **Harry** (Junior Android Engineer) — SDK and library choices; Android-specific constraints; permissions and foreground service requirements; what a junior developer will get wrong or need guidance on
+- **Harry** (Junior Android Engineer) — SDK and library choices; Android-specific constraints; permissions and platform requirements; what a junior developer will get wrong or need guidance on
 - **Arthur** (DevOps / SRE) — infrastructure implied by the design; scaling and failure modes; operational requirements; what happens when the service is unavailable
 - **Moody** (Security Engineer) — attack vectors; credential handling; trust surfaces in the protocol; what the security model must commit to before the spec is written
-- **Neville** (QA / Testing) — connectivity loss; app lifecycle edge cases; OEM fragmentation risk; states the design assumes will never happen but will
+- **Neville** (QA / Testing) — connectivity loss; app lifecycle edge cases; platform and device fragmentation; states the design assumes will never happen but will
 
 Each reviewer: 300–500 words, in character, specific to their domain. Not a general review — a targeted list of decisions the spec must make.
 
@@ -93,13 +93,13 @@ Write `spec/engineering/TECH_SPEC.md`.
 
 1. **Overview** — what this document covers; what it does not cover; relationship to PRD and design doc
 2. **Architecture** — system components and their responsibilities; data flow; what lives where
-3. **Session State Machine** — the authoritative state diagram with every state, every transition, and every trigger; must be more detailed than the PRD version
-4. **Signalling Protocol** — every message type, direction, payload, and error case
-5. **Android Client** — per role (Owner, Controller); foreground services; permissions; key SDK choices with rationale
+3. **State Machine** — the authoritative state diagram with every state, every transition, and every trigger; must be more detailed than the PRD version
+4. **Protocol / Signalling** — every message type, direction, payload, and error case for real-time communication
+5. **Client** — per platform in scope; platform-specific service and permission model; key SDK and library choices with rationale
 6. **Backend** — each service or module; data model; storage schema; TTL handling; deployment requirements
-7. **P2P / Media** — WebRTC configuration; ICE/STUN/TURN; codec chain; DataChannel design
+7. **Transport / Media** — communication protocol; connection model; data channel design
 8. **Security** — auth; token lifecycle; trust surfaces; what the server must verify; what the client must not be trusted to send
-9. **OEM / Edge Cases** — known fragmentation risks; fallbacks; degraded modes
+9. **Platform / Edge Cases** — known fragmentation risks; fallbacks; degraded modes
 10. **API Reference** — every endpoint; request/response schemas; error codes
 11. **Observability** — metrics; alerts; what must be monitored and at what threshold
 12. **Open Questions** — explicitly named; deferred to post-MVP only if safe to defer
@@ -118,10 +118,10 @@ Launch one agent per team member simultaneously. Each agent receives the tech sp
 
 - **Dumbledore** — architecture coherence; decisions that will be expensive to reverse; what is missing at the architectural level
 - **Hermione** — backend correctness; state machine completeness; API contract; trust surfaces; what the server accepts that it should not
-- **Harry** — Android implementation correctness; SDK specifics; permissions; what a junior developer will build wrong from this spec
+- **Harry** — Android implementation correctness; SDK and platform specifics; permissions; what a junior developer will build wrong from this spec
 - **Arthur** — infrastructure gaps; operational requirements implied but not stated; failure modes not addressed; monitoring and alerting coverage
 - **Moody** — security model completeness; attack vectors the spec leaves open; credential handling; replay attacks; social engineering vectors
-- **Neville** — edge case coverage; connectivity loss handling; OEM fragmentation; app lifecycle; states the spec assumes will never occur
+- **Neville** — edge case coverage; connectivity loss handling; platform and device fragmentation; app lifecycle; states the spec assumes will never occur
 - **Percy** — missing acceptance criteria; ambiguous thresholds; implementation details left to guesswork; deferred decisions that are not safe to defer
 - **Ginny** — client-server protocol detail; retry behaviour; what happens when backend is slow or unavailable; race conditions in the protocol
 - **Ron** — web components; anything the spec implies about the browser-side experience
@@ -130,7 +130,7 @@ Launch one agent per team member simultaneously. Each agent receives the tech sp
 - **Luna** — what the spec leaves on the table; the most interesting version of the architecture not being built
 - **McGonagall** — design-to-spec contract; whether the spec covers every screen state in the design
 - **Colin** — does the spec match the product intent; does it solve the right problem at the right level
-- **Fred** — post-session hooks implied by the architecture; anything the spec enables or forecloses for growth
+- **Fred** — post-interaction hooks implied by the architecture; anything the spec enables or forecloses for growth
 - **Dean** — spec-to-implementation handoff; what a designer would catch that engineers overlook
 - **Tonks** — human experience implied by the protocol choices; latency and responsiveness constraints; where the spec will make the experience feel broken
 - **Voldemort** — the assumption at the core of the spec that will cause the implementation to fail; the decision nobody has questioned

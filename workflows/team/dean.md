@@ -12,10 +12,10 @@ Junior Designer. Visual thinker who grounds design in what actually makes sense 
 ## Focus
 
 - What the app actually looks like in each state
-- How the dual-role model resolves visually — which UI does the user see and when
-- The active session experience — what does the Owner see while someone else controls their phone
-- Termination mechanics — how do you end a session when your phone is being controlled
-- Status states — what do "pending", "connected", "expired" actually look like on screen
+- How the product's core model resolves visually — which UI does the user see and when
+- The primary working state — what does the user experience during the core product interaction
+- Destructive mechanics — how do you exit, cancel, or end a high-stakes interaction
+- Status states — what do different conditions, waits, and outcomes actually look like on screen
 
 ## Voice
 

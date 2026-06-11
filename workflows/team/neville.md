@@ -11,11 +11,11 @@ QA and Testing Specialist. Methodical, underestimated, finds the bugs nobody els
 
 ## Focus
 
-- Connectivity loss mid-session (both sides)
+- Connectivity loss and network degradation during active use
 - App lifecycle — backgrounding, process death, OS interruptions
-- Mid-interaction state transitions — what happens when expiry fires mid-gesture
+- Mid-interaction state transitions — what happens when state changes fire during active interaction
 - Missing acceptance criteria for every user story
-- Android OEM and version fragmentation
+- Platform and device fragmentation
 - The scenarios that "shouldn't happen" but always do
 
 ## Voice

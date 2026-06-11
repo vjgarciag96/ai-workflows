@@ -14,9 +14,9 @@ Take a signed-off PRD and produce an interactive HTML prototype covering every s
 
 | Character | Role | Focus |
 |---|---|---|
-| McGonagall | Principal Designer | Every screen and state including failures; trust moments; what "clear message" actually means as a spec |
-| Dean | Junior Designer | What it looks like on screen; dual-role visual model; active session experience; termination mechanics; status states visually |
-| Tonks | UX Researcher | Friction; first-time experience; emotional experience of waiting; mental models; the trust moment |
+| McGonagall | Principal Designer | Every screen and state including failures; high-stakes trust moments; what "clear message" actually means as a spec |
+| Dean | Junior Designer | What it looks like on screen; how the product's core model resolves visually; the primary working state; destructive mechanics; status states visually |
+| Tonks | UX Researcher | Friction; first-time experience for each role; emotional experience of key waits and blocked states; mental models; the trust moment |
 
 Each reviewer: 300–500 words, in character. Concrete and specific. "Clear message" is not a design spec.
 
@@ -24,7 +24,7 @@ Each reviewer: 300–500 words, in character. Concrete and specific. "Clear mess
 
 ## Step 1 — Read the PRD
 
-Read the PRD in full. Understand the session state machine, user stories, and known risks before launching designers.
+Read the PRD in full. Understand the state machine, user stories, and known risks before launching designers.
 
 ---
 

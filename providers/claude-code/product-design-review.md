@@ -53,21 +53,21 @@ Design review focus per role:
 
 - **McGonagall**: Missing states; spec completeness; trust moments; places where engineering will guess wrong if the document is silent
 - **Dean**: What each screen concretely looks like; developer ambiguity; will an engineer build this wrong
-- **Tonks**: Human moments; emotional experience; copy that misleads; coordination gaps between Owner and Controller
+- **Tonks**: Human moments; emotional experience; copy that misleads; coordination gaps between roles where both sides have a different mental model
 - **Percy**: Missing acceptance criteria; ambiguous states; deferred decisions the design exposes
-- **Neville**: Missing edge case states; OEM fragmentation risk; accessibility gaps
+- **Neville**: Missing edge case states; platform and device fragmentation risk; accessibility gaps
 - **Harry**: Android-specific design assumptions; permissions flow; what a junior dev will build wrong
 - **Hermione**: Design-to-backend contract; data the screens assume is available; state machine coverage
-- **Ginny**: Fallback states for missing identity data; timing assumptions; what happens when backend data is unavailable
+- **Ginny**: Fallback states for missing or partial data; timing assumptions; what happens when backend data is unavailable
 - **Moody**: Social engineering vectors in the UI; misleading copy; trust signals that could be spoofed
-- **Arthur**: Operational states implied by the design; session timing edge cases; backend events the design doesn't name
+- **Arthur**: Operational states implied by the design; timing edge cases; backend events the design doesn't name
 - **Dumbledore**: Design decisions that constrain architecture; what must be decided before implementation begins
 - **Snape**: Instrumentation events implied by the design; what the design makes measurable or opaque
-- **Ron**: Web landing page states; link handling in the browser; cross-platform design assumptions
-- **Sirius**: Components that will need to change for cross-platform; iOS-incompatible assumptions
+- **Ron**: Browser-facing states; link handling in the browser before install; cross-platform design assumptions
+- **Sirius**: Components that will need to change for cross-platform; platform-incompatible assumptions
 - **Luna**: What the design leaves on the table; the most interesting flow not being built
 - **Colin**: Does the design tell the right success story; which flows solve a real need
-- **Fred**: Conversion moments; post-session hooks; users at peak engagement with nowhere to go
+- **Fred**: Conversion moments; post-interaction hooks; users at peak engagement with nowhere to go
 - **Voldemort**: The fundamental contradiction; the assumption that will cause the product to fail
 
 Each reviewer: 200–300 words, in character.

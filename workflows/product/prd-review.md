@@ -46,37 +46,37 @@ Launch one agent per team member simultaneously. Each agent receives:
 
 #### PRD review focus by role
 
-**Dumbledore** — Architectural decisions implied but not made; what must be decided before code is written; the no-accounts or auth model and its long-term implications.
+**Dumbledore** — Architectural decisions implied but not made; what must be decided before code is written; long-term implications of choices being made now.
 
-**Hermione** — Backend infrastructure implied; session lifecycle completeness; state machine gaps; API and data model questions; link security.
+**Hermione** — Backend infrastructure implied; state machine completeness; API and data model questions; authentication and token design.
 
-**Ron** — Web-related decisions deferred; what the link does in a browser; transport choices that affect future web support.
+**Ron** — Web-related decisions deferred; what the product does in a browser; transport choices that affect future web support.
 
-**Sirius** — Platform expansion claims; what iOS actually means for each role (Owner vs Controller); decisions made now that foreclose iOS later.
+**Sirius** — Platform expansion claims; what cross-platform support actually means per role; decisions made now that foreclose other platforms later.
 
 **Luna** — Assumptions worth questioning; the most interesting version of the product being left on the table; what would make this magical.
 
 **Percy** — Ambiguous user stories; missing acceptance criteria; deferred decisions that must be made now; success criteria.
 
-**McGonagall** — All states (not just happy path); what "clear message" means as a design spec; trust moments; the approval and termination flows.
+**McGonagall** — All states (not just happy path); what "clear message" means as a design spec; high-stakes trust moments; critical interaction flows.
 
-**Snape** — Success metrics; instrumentation; what qualitative goals mean in measurable terms; what no-accounts costs analytically.
+**Snape** — Success metrics; instrumentation; what qualitative goals mean in measurable terms; what the account model costs analytically.
 
-**Moody** — Attack vectors; link as credential; encryption; Accessibility Service abuse surface; social engineering scenarios; what makes this a scam tool.
+**Moody** — Attack vectors; credentials and token security; encryption; abuse surfaces; social engineering scenarios; what makes this product a tool for bad actors.
 
-**Neville** — Edge cases; failure modes; connectivity loss; app lifecycle; mid-interaction states; missing acceptance criteria; Android fragmentation.
+**Neville** — Edge cases; failure modes; connectivity loss; app lifecycle; mid-interaction states; missing acceptance criteria; platform fragmentation.
 
-**Arthur** — Infrastructure implied; signalling; relay; scaling; operational failure modes; latency SLOs; observability gaps.
+**Arthur** — Infrastructure implied; real-time coordination requirements; scaling; operational failure modes; latency SLOs; observability gaps.
 
-**Fred** — Viral loops; acquisition; the hook moment; retention; Controller-becomes-Owner conversion; distribution.
+**Fred** — Viral loops; acquisition; the hook moment; retention; role-switching and conversion moments; distribution.
 
-**Harry** — Things seniors assume away; Android-specific questions (permissions, deep links, background behaviour); the first screen; what the app actually looks like.
+**Harry** — Things seniors assume away; Android-specific questions (permissions, background behaviour, platform constraints); the first screen; what the app actually looks like.
 
-**Ginny** — Trust model between client and server; link content and entropy; data retention; retry ceilings; the question Hermione would answer in five minutes.
+**Ginny** — Trust model between client and server; what the API surface exposes; data retention; retry ceilings; the question Hermione would answer in five minutes.
 
-**Colin** — The success story; precision of the problem framing; who installs first; what brings someone back; the first screen.
+**Colin** — The success story; precision of the problem framing; who takes the first step; what brings someone back; the first screen.
 
-**Dean** — What it actually looks like; state communication in the UI; the active session experience; termination mechanics.
+**Dean** — What it actually looks like; state communication in the UI; the primary working state; destructive mechanics.
 
 **Voldemort** — The premise; contradictions between stated goals; the one assumption that kills the product if wrong; what the competitive landscape says about this product's chances.
 

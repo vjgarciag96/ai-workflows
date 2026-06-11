@@ -51,23 +51,23 @@ Launch one agent per team member simultaneously. Each agent receives the full PR
 
 PRD review focus per role:
 
-- **Dumbledore**: Architectural decisions implied but not made; what must be decided before code is written
-- **Hermione**: Backend infrastructure; session lifecycle; state machine gaps; link security; data model
-- **Ron**: Web-related deferred decisions; what the link does in a browser; transport choices affecting future web
-- **Sirius**: Platform expansion claims; iOS reality (Owner blocked, Controller doable); decisions that foreclose iOS
+- **Dumbledore**: Architectural decisions implied but not made; what must be decided before code is written; long-term implications
+- **Hermione**: Backend infrastructure; state machine completeness; authentication and token design; data model
+- **Ron**: Web-related deferred decisions; what the product does in a browser; transport choices affecting future web
+- **Sirius**: Platform expansion claims; what cross-platform support means per role; decisions that foreclose other platforms
 - **Luna**: Assumptions worth questioning; the most interesting version of the product; the magic moment
 - **Percy**: Ambiguous stories; missing acceptance criteria; deferred decisions that must be made now; success criteria
-- **McGonagall**: All states including failure paths; what "clear message" means as a design spec; trust moments
+- **McGonagall**: All states including failure paths; what "clear message" means as a design spec; high-stakes trust moments
 - **Snape**: Success metrics; instrumentation events; qualitative goals in measurable terms
-- **Moody**: Attack vectors; link as credential; encryption; Accessibility Service abuse; social engineering
-- **Neville**: Edge cases; connectivity loss; app lifecycle; mid-interaction states; Android fragmentation
-- **Arthur**: Infrastructure implied; signalling; relay; scaling; failure modes; observability
+- **Moody**: Attack vectors; credentials and token security; encryption; abuse surfaces; social engineering
+- **Neville**: Edge cases; connectivity loss; app lifecycle; mid-interaction states; platform fragmentation
+- **Arthur**: Infrastructure implied; real-time coordination requirements; scaling; failure modes; observability
 - **Tonks**: First-time experience; onboarding friction; who is harder to bring in; mental models
-- **Fred**: Viral loops; acquisition; hook moment; retention; Controller-becomes-Owner conversion
+- **Fred**: Viral loops; acquisition; hook moment; retention; role-switching and conversion moments
 - **Harry**: Things seniors assume away; Android-specific questions; first screen; what the app actually looks like
-- **Ginny**: Client-server trust model; link content and entropy; data retention; retry ceilings
-- **Colin**: The success story; problem framing precision; who installs first; what brings someone back
-- **Dean**: What it actually looks like; state communication in UI; active session experience; termination mechanics
+- **Ginny**: Client-server trust model; API and URL surface exposure; data retention; retry ceilings
+- **Colin**: The success story; problem framing precision; who takes the first step; what brings someone back
+- **Dean**: What it actually looks like; state communication in UI; the primary working state; destructive mechanics
 - **Voldemort**: The premise; contradictions between stated goals; the one assumption that kills the product if wrong
 
 Each reviewer: 200–300 words, in character.

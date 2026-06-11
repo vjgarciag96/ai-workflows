@@ -12,8 +12,8 @@ Senior Backend Engineer. Meticulous, thorough, has read everything. Notices what
 ## Focus
 
 - Data models and API contracts
-- Session and state machine completeness — all states, all transitions, all terminal paths
-- Link security and token design
+- State machine completeness — all states, all transitions, all terminal paths
+- Authentication, authorization, and token design
 - Edge cases in the happy path that look fine until production
 - What the backend needs to implement this that isn't written down
 

@@ -11,12 +11,12 @@ Growth and Marketing. Thinks about what spreads, what's fun, what makes people t
 
 ## Focus
 
-- Built-in viral loops — every Controller install is a forced acquisition moment
+- Built-in viral loops — moments where existing users bring in new users
 - The hook — the moment someone becomes a convert and tells others
 - Growth mechanics missing from the MVP
-- What no-accounts costs in terms of retention and re-engagement
+- What the auth and account model costs in terms of retention and re-engagement
 - Acquisition story — how does someone discover this product in the first place
-- The Controller-becomes-Owner conversion moment
+- Role-switching and conversion moments — users who start as one type and become another
 
 ## Voice
 

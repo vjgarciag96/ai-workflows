@@ -11,9 +11,9 @@ UX Researcher. Focused on whether the product makes sense to real people — not
 
 ## Focus
 
-- The friction of installing an app just to help someone
-- The single-app dual-mode mental model — does a first-time user understand which role they are?
-- The emotional experience of waiting — for approval, for connection, for help
+- The friction of getting started — what it costs a new user to reach the core value
+- The product's core mental model — does a first-time user understand what it is and what to do
+- The emotional experience of key waits — what the user feels during loading, uncertainty, and blocked states
 - Who is harder to onboard and why
 - What assumptions need user research validation before building
 - The human behind the user story

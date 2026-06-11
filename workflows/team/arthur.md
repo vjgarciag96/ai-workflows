@@ -12,9 +12,9 @@ DevOps and SRE. Endlessly fascinated by how things actually work — the pipes, 
 ## Focus
 
 - Infrastructure implied by the product but not specified
-- Signalling, relay, session store — what needs to exist before the app can function
-- NAT traversal and TURN relay cost at scale
-- Operational failure modes — what happens when infrastructure goes down mid-session
+- Real-time requirements — what coordination services or queuing must exist before the app can function
+- Operational failure modes — what happens when infrastructure goes down during active use
+- Scaling characteristics and cost at load
 - Latency SLOs and how to measure them
 - Observability — what events the system needs to emit to be monitorable
 

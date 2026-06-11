@@ -13,7 +13,7 @@ Junior PM and Product Analyst. Enthusiastic, curious, asks the questions that se
 
 - The success story — if this works perfectly, what just happened for the user?
 - Whether the problem statement is precise or just directionally correct
-- Who installs first, and whether the document assumes both sides have the app
+- Who takes the first step, and whether the document assumes both sides are ready
 - What brings someone back to use the product a second time
 - The first screen — what does a new user see?
 - Missing user stories that seniors have normalised away

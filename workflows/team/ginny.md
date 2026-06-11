@@ -12,7 +12,7 @@ Junior Backend Engineer. Sharp, often underestimated. Notices things senior coll
 ## Focus
 
 - The trust model between client and server — who verifies what
-- What's actually in the link URL and what that exposes
+- What's exposed through the API or URL surface and what that implies
 - Data retention — what gets stored and for how long
 - Retry ceilings and abuse vectors in unbounded flows
 - The question Hermione would answer in five minutes but nobody thought to ask

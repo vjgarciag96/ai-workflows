@@ -46,35 +46,35 @@ Launch one agent per team member simultaneously. Each agent receives DESIGN.md, 
 
 **Dean** — What each screen concretely looks like; component behaviour; developer ambiguity; will an engineer build this wrong from the current description.
 
-**Tonks** — Human moments; emotional experience of each wait and each decision; copy that misleads or over-promises; coordination gaps between Owner and Controller where both sides have a different mental model.
+**Tonks** — Human moments; emotional experience of each wait and each decision; copy that misleads or over-promises; coordination gaps between roles where both sides have a different mental model.
 
 **Percy** — Missing acceptance criteria; ambiguous states; deferred decisions the design exposes; places where "clear message" is stated as a requirement but not specified.
 
-**Neville** — Missing edge case states; OEM fragmentation risk in the UI layer; accessibility gaps; states the design assumes will never happen.
+**Neville** — Missing edge case states; platform and device fragmentation risk in the UI layer; accessibility gaps; states the design assumes will never happen.
 
 **Harry** — Android-specific design assumptions; permissions flow; what a junior developer will build wrong or need to look up; component choices that don't exist natively on Android.
 
-**Hermione** — Design-to-backend contract; which screens assume data that requires specific API calls; state machine coverage in the screen flows; data the screens assume is available (names, photos, tokens).
+**Hermione** — Design-to-backend contract; which screens assume data that requires specific API calls; state machine coverage in the screen flows; data the screens assume is available.
 
-**Ginny** — What happens when backend data is unavailable; fallback states for missing identity information; timing assumptions in the flows.
+**Ginny** — What happens when backend data is unavailable; fallback states for missing or partial data; timing assumptions in the flows.
 
-**Moody** — Social engineering vectors in the UI; misleading copy that lowers the Owner's guard; trust signals that could be spoofed; confirmation flows that can be bypassed.
+**Moody** — Social engineering vectors in the UI; misleading copy that lowers a user's guard; trust signals that could be spoofed; confirmation flows that can be bypassed.
 
-**Arthur** — Operational states implied by the design; session timing edge cases; reconnection grace window in the UI; states that require backend events the design doesn't name.
+**Arthur** — Operational states implied by the design; timing edge cases; states that require backend events the design doesn't name.
 
 **Dumbledore** — Design decisions that constrain architecture before it is written; what must be decided before implementation begins; design choices that will be expensive to change later.
 
 **Snape** — Instrumentation events implied by the design; what the current design makes measurable and what it leaves opaque; success criteria implied by specific screen states.
 
-**Ron** — Web landing page states; link handling in the browser before install; cross-platform design assumptions that will need to change for web.
+**Ron** — Browser-facing states and link handling before install; cross-platform design assumptions that will need to change for web.
 
-**Sirius** — Components that will need to change for cross-platform support; iOS-incompatible assumptions in the design; what a future iOS Controller build would require rethinking.
+**Sirius** — Components that will need to change for cross-platform support; platform-incompatible assumptions in the design; what a future cross-platform build would require rethinking.
 
 **Luna** — What the design leaves on the table; the most interesting version of a flow that isn't being built; delight moments that could exist without adding scope.
 
 **Colin** — Does the design tell the right success story; does the screen inventory match the stated problem; which flows feel like they solve a product need and which feel like filler.
 
-**Fred** — Conversion moments in the design; post-session hooks; places where a user at peak engagement has nowhere to go.
+**Fred** — Conversion moments in the design; post-interaction hooks; places where a user at peak engagement has nowhere to go.
 
 **Voldemort** — The fundamental contradiction in the design; the assumption that will cause the product to fail; the screen nobody will use and the reason nobody talks about it.
 

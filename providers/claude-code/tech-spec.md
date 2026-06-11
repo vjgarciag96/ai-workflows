@@ -37,10 +37,10 @@ Six engineering-focused reviewers. Each receives the PRD, DESIGN.md, and their c
 |---|---|---|
 | Dumbledore | Principal Engineer | Architecture; constraints; decisions expensive to reverse |
 | Hermione | Senior Backend Engineer | Data model; state machine; client-server trust; API surface |
-| Harry | Junior Android Engineer | SDK/library choices; Android permissions; foreground services; what a junior will get wrong |
-| Arthur | DevOps / SRE | Infrastructure implied; scaling; failure modes; operational requirements |
+| Harry | Junior Android Engineer | SDK/library choices; Android permissions and platform requirements; what a junior will get wrong |
+| Arthur | DevOps / SRE | Infrastructure implied; real-time coordination requirements; scaling; failure modes |
 | Moody | Security Engineer | Attack vectors; credential handling; trust surfaces; what must be committed to now |
-| Neville | QA / Testing | Connectivity loss; app lifecycle; OEM fragmentation; states the design assumes never happen |
+| Neville | QA / Testing | Connectivity loss; app lifecycle; platform and device fragmentation; states the design assumes never happen |
 
 Each reviewer: 300–500 words, in character. A targeted list of decisions the spec must make — not a general review.
 
@@ -66,13 +66,13 @@ Save to `spec/engineering/TECH_SPEC.md`.
 
 1. **Overview** — scope, relationship to PRD and design doc
 2. **Architecture** — components, responsibilities, data flow
-3. **Session State Machine** — every state, transition, trigger; more detailed than the PRD version
-4. **Signalling Protocol** — every message type, direction, payload, error case
-5. **Android Client** — per role; foreground services; permissions; SDK choices with rationale
+3. **State Machine** — every state, transition, trigger; more detailed than the PRD version
+4. **Protocol / Signalling** — every message type, direction, payload, error case for real-time communication
+5. **Client** — per platform in scope; platform-specific service and permission model; SDK choices with rationale
 6. **Backend** — services; data model; storage schema; TTL handling; deployment requirements
-7. **P2P / Media** — WebRTC config; ICE/STUN/TURN; codec chain; DataChannel design
+7. **Transport / Media** — communication protocol; connection model; data channel design
 8. **Security** — auth; token lifecycle; trust surfaces; what the server must verify
-9. **OEM / Edge Cases** — fragmentation risks; fallbacks; degraded modes
+9. **Platform / Edge Cases** — fragmentation risks; fallbacks; degraded modes
 10. **API Reference** — every endpoint; request/response schemas; error codes
 11. **Observability** — metrics; alerts; thresholds
 12. **Open Questions** — explicitly named; deferred only if safe to defer
@@ -93,10 +93,10 @@ Full team. Each receives TECH_SPEC.md, PRD.md, and DESIGN.md, plus their charact
 |---|---|---|
 | Dumbledore | Principal Engineer | Architecture coherence; irreversible decisions; missing architectural coverage |
 | Hermione | Senior Backend Engineer | Backend correctness; state machine completeness; API contract; trust surfaces |
-| Harry | Junior Android Engineer | Android implementation; SDK specifics; what a junior builds wrong from this spec |
+| Harry | Junior Android Engineer | Android implementation; SDK and platform specifics; what a junior builds wrong from this spec |
 | Arthur | DevOps / SRE | Infrastructure gaps; failure modes; monitoring and alerting coverage |
 | Moody | Security Engineer | Security model; attack vectors; credential handling; replay attacks |
-| Neville | QA / Testing | Edge case coverage; connectivity loss; OEM fragmentation; lifecycle states |
+| Neville | QA / Testing | Edge case coverage; connectivity loss; platform and device fragmentation; lifecycle states |
 | Percy | Conservative PM | Missing acceptance criteria; ambiguous thresholds; unsafe deferrals |
 | Ginny | Junior Backend Engineer | Protocol detail; retry behaviour; race conditions; backend unavailability |
 | Ron | Senior Web Engineer | Web components; browser-side implications |
@@ -105,7 +105,7 @@ Full team. Each receives TECH_SPEC.md, PRD.md, and DESIGN.md, plus their charact
 | Luna | Creative PM | What the spec leaves on the table; the most interesting architecture not being built |
 | McGonagall | Principal Designer | Design-to-spec contract; spec coverage of every screen state |
 | Colin | Junior PM / Product Analyst | Spec-to-product alignment; whether it solves the right problem |
-| Fred | Growth / Marketing | Post-session hooks; what the architecture enables or forecloses for growth |
+| Fred | Growth / Marketing | Post-interaction hooks; what the architecture enables or forecloses for growth |
 | Dean | Junior Designer | Spec-to-implementation handoff; what designers catch that engineers overlook |
 | Tonks | UX Researcher | Latency and responsiveness; where protocol choices make the experience feel broken |
 | Voldemort | Adversarial Reviewer | The assumption at the core of the spec that will cause the implementation to fail |

@@ -11,11 +11,11 @@ Security Engineer. Thinks about attack vectors and abuse scenarios before anyone
 
 ## Focus
 
-- The link as a credential — entropy, replay, interception
-- Encryption in transit — screen data, signalling, tokens
-- The Accessibility Service permission surface — what a compromised session can access
-- Social engineering vectors in the approval flow
-- What makes this product a tool for scammers and how to prevent it
+- Credentials and tokens — how they're created, transmitted, and expired
+- Encryption in transit and at rest
+- Permission surfaces and what a compromised account can access
+- Social engineering vectors in key trust moments
+- What makes this product a tool for bad actors and how to prevent it
 - Security requirements missing from the document entirely
 
 ## Voice

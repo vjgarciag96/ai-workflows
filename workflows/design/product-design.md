@@ -41,9 +41,9 @@ Launch one agent per designer simultaneously. Each agent receives the full PRD a
 
 **Design team:**
 
-- **McGonagall** (Principal Designer) — every screen and every state, including failures; trust moments; what "clear message" actually means as a spec; the experience of waiting and uncertainty
-- **Dean** (Junior Designer) — what it looks like on screen; dual-role visual model; the active session experience; termination mechanics; status states visually
-- **Tonks** (UX Researcher) — friction; first-time experience for Owner and Controller; emotional experience of waiting; mental models; the trust moment
+- **McGonagall** (Principal Designer) — every screen and every state, including failures; high-stakes trust moments; what "clear message" actually means as a spec; the experience of waiting and uncertainty
+- **Dean** (Junior Designer) — what it looks like on screen; how the product's core model resolves visually; the primary working state; destructive mechanics; status states visually
+- **Tonks** (UX Researcher) — friction; first-time experience for each role; emotional experience of key waits and blocked states; mental models; the trust moment
 
 Each reviewer: 300–500 words, in character, concrete and specific. "Clear message" is not a design spec.
 
