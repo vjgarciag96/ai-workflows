@@ -46,6 +46,12 @@ They will be available as slash commands in any project (e.g. `/discovery`).
 | [product-design](design/product-design.md) | Take a signed-off PRD and produce an interactive HTML prototype covering all screens and states |
 | [product-design-review](design/product-design-review.md) | Run a structured multi-perspective review of a product design document; surface missing states, spec gaps, and developer ambiguities |
 | [tech-spec](engineering/tech-spec.md) | Take a signed-off PRD and design doc and produce a complete technical specification; two-phase: pre-spec engineering review then full-team post-spec review |
+| [plan](engineering/plan.md) | Slice the tech spec into vertical slices and a hierarchical backlog; assign owners and define ACs |
+| [build](engineering/build.md) | Orchestrate a build cycle: pick up available tasks, implement in parallel, review, merge, repeat |
+| [implement](engineering/implement.md) | Implement a single backlog task TDD, in character as the assigned team member; open a PR |
+| [review](engineering/review.md) | Review a PR with domain-primary and cross-domain reviewers in parallel; approve or request changes |
+| [qa](engineering/qa.md) | Pre-release QA pass across a milestone; Neville leads; failures become backlog tasks |
+| [validate](engineering/validate.md) | Validate implementation fidelity against spec, design, and ACs at milestone level |
 | [commit](git/commit.md) | Generate a commit message consistent with the repo's style |
 
 ---
