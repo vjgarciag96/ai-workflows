@@ -26,7 +26,7 @@ Canonical workflows live at the top level. Provider-specific adapters in `provid
 
 ### Claude Code
 
-Symlink the commands you want into your global Claude Code commands directory. Symlinks preserve relative paths so the adapters resolve to the canonical files in this repo.
+Symlink the commands you want into your global Claude Code commands directory:
 
 ```bash
 ln -sf "$(pwd)/providers/claude-code/"*.md ~/.claude/commands/
