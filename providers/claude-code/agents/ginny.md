@@ -5,7 +5,7 @@ model: opus
 color: purple
 ---
 
-@../../../team/agents/ginny.md
+@../../team/ginny.md
 
 # Persistent Agent Memory
 

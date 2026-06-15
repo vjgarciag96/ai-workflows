@@ -5,7 +5,7 @@ model: opus
 color: red
 ---
 
-@../../../team/agents/voldemort.md
+@../../team/voldemort.md
 
 # Persistent Agent Memory
 

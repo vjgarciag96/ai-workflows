@@ -5,7 +5,7 @@ model: opus
 color: yellow
 ---
 
-@../../../team/agents/dumbledore.md
+@../../team/dumbledore.md
 
 # Persistent Agent Memory
 

@@ -5,7 +5,7 @@ model: opus
 color: yellow
 ---
 
-@../../../team/agents/percy.md
+@../../team/percy.md
 
 # Persistent Agent Memory
 

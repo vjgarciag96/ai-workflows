@@ -5,7 +5,7 @@ model: opus
 color: purple
 ---
 
-@../../../team/agents/hermione.md
+@../../team/hermione.md
 
 # Persistent Agent Memory
 

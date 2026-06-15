@@ -5,7 +5,7 @@ model: opus
 color: purple
 ---
 
-@../../../team/agents/luna.md
+@../../team/luna.md
 
 # Persistent Agent Memory
 

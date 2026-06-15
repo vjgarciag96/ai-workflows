@@ -5,7 +5,7 @@ model: opus
 color: green
 ---
 
-@../../../team/agents/neville.md
+@../../team/neville.md
 
 # Persistent Agent Memory
 

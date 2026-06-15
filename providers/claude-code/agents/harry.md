@@ -5,7 +5,7 @@ model: opus
 color: red
 ---
 
-@../../../team/agents/harry.md
+@../../team/harry.md
 
 # Persistent Agent Memory
 

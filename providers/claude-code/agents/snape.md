@@ -5,7 +5,7 @@ model: opus
 color: green
 ---
 
-@../../../team/agents/snape.md
+@../../team/snape.md
 
 # Persistent Agent Memory
 

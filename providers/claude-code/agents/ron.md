@@ -5,7 +5,7 @@ model: opus
 color: orange
 ---
 
-@../../../team/agents/ron.md
+@../../team/ron.md
 
 # Persistent Agent Memory
 

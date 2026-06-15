@@ -5,7 +5,7 @@ model: opus
 color: cyan
 ---
 
-@../../../team/agents/mcgonagall.md
+@../../team/mcgonagall.md
 
 # Persistent Agent Memory
 

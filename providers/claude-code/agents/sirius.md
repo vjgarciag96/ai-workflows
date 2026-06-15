@@ -5,7 +5,7 @@ model: opus
 color: blue
 ---
 
-@../../../team/agents/sirius.md
+@../../team/sirius.md
 
 # Persistent Agent Memory
 
