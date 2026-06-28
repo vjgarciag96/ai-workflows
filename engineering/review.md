@@ -27,6 +27,9 @@ Review a PR with domain-primary reviewers and cross-domain crosspollination. Syn
 - Reviewers do not see each other's output before writing their own.
 - The synthesis distinguishes blockers (must fix before merge) from suggestions (worth doing, not required) from observations (noted, no action needed).
 - Approve means the PR is ready to merge as-is. Request changes means it is not. There is no middle ground.
+- CI must pass before merging, not before approval. Approval and CI are independent gates — both must be satisfied before a PR is merged.
+- AI agent comments (GitHub Copilot, etc.) are part of the review input. Read them, validate them, and address them in the synthesis — do not silently ignore them.
+- Review findings are posted to the GitHub PR as a formal review with inline comments where possible, not just noted internally.
 
 ---
 
@@ -38,6 +41,8 @@ Read the PR title, description, and diff. Identify:
 - Which task this implements (look up in BACKLOG.md)
 - Which domain(s) the change touches
 - Whether any security-sensitive areas are involved
+
+Fetch all existing PR comments, including those from GitHub Copilot or other AI agents. Treat them as additional input — they may surface issues the review team should validate, confirm, or rebut. Do not ignore them because they came from a tool.
 
 ---
 
@@ -95,8 +100,16 @@ If there are blockers: request changes, listing them clearly.
 
 ---
 
-### 5 — Post Review
+### 5 — Check CI
 
-Post the synthesised review to the PR. Do not post individual reviewer outputs — post the synthesis.
+Check the CI status on the PR and include it in the posted review. CI and approval are independent gates — both must pass before merging. A PR can be approved while CI is still running, but it must not be merged until all required checks pass.
+
+---
+
+### 6 — Post Review to GitHub
+
+Post the synthesised review as a GitHub PR review using `gh pr review`. Use inline comments for specific line-level findings where possible — not just a top-level comment. Post the overall summary and decision (approve / request changes) as the review body.
+
+Do not post individual reviewer outputs — post the synthesis only.
 
 If changes are requested, the implementer addresses them and the workflow is re-run on the updated PR.
