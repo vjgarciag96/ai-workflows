@@ -11,6 +11,7 @@ A `spec/product/PRD.md` file.
 ## Output
 
 - `spec/design/prototype.html` — a self-contained, interactive HTML/CSS/JS prototype. Mobile viewport, phone frame, dev nav for jumping to any screen/state. No external dependencies.
+- `spec/design/DESIGN.md` — the engineering-facing design specification. Covers every screen, every state, every component, every interaction pattern, copy guidelines, and what is deferred to the tech spec. This is what engineers build against; the prototype is the visual reference.
 - `spec/product/PRD.md`, updated with every product decision surfaced during the design phase.
 
 ---
@@ -100,6 +101,23 @@ Build `design/prototype.html` directly. Requirements:
 
 ---
 
-### 6 — Commit
+### 6 — Write DESIGN.md
 
-Commit the prototype and the updated PRD together with a message describing what the design phase decided.
+After the prototype is complete, write `spec/design/DESIGN.md` — the engineering-facing design specification.
+
+This document must cover:
+- **Design system:** full color palette (CSS token names and hex values), typography scale, layout constants
+- **Navigation model:** tab bar, app bar, status bar — structure and behaviour
+- **Screen inventory:** for every screen and every sub-state — layout, all UI elements with sizes/weights/colors, and interactions
+- **Overlays and sheets:** every bottom sheet, scrim, and toast — triggers, content, dismissal rules
+- **Interaction patterns:** the key flows (status change, add from search, remove, offline, sync conflict) described step-by-step
+- **Copy guidelines:** exact strings for all system messages, banners, empty states, and confirmation dialogs; copy principles
+- **What this design defers:** implementation details explicitly out of scope (data sources, sync protocol, token storage, etc.)
+
+The prototype is the visual reference. DESIGN.md is what an engineer reads to understand every decision without opening the prototype.
+
+---
+
+### 7 — Commit
+
+Commit the prototype, DESIGN.md, and the updated PRD together with a message describing what the design phase decided.
