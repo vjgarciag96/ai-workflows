@@ -122,3 +122,5 @@ For every decision the user makes:
 ### 6 — Commit
 
 Once the user is satisfied with the updated PRD, commit with a descriptive message summarising what changed.
+
+After committing, the next step is always **design**. Do not suggest a tech spec, engineering planning, or implementation. Offer to run the product design workflow.

@@ -146,4 +146,4 @@ Once approved:
 
 Run the PRD review workflow. See `product/prd-review.md` for the full steps.
 
-Do not proceed to design or engineering until the PRD review is complete.
+Do not proceed until the PRD review is complete. The next step after PRD review is always design — never engineering. Suggesting a tech spec or implementation before design is complete is an error.
