@@ -139,3 +139,11 @@ Once approved:
 2. Create the project directory with the folder structure: `spec/product/`, `spec/design/`, `spec/engineering/`.
 3. Write the PRD as `spec/product/PRD.md`.
 4. Run `git init` and commit with message `Add PRD`.
+
+---
+
+### 8 — PRD Review
+
+Run the PRD review workflow. See `product/prd-review.md` for the full steps.
+
+Do not proceed to design or engineering until the PRD review is complete.
